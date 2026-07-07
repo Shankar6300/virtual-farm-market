@@ -50,7 +50,7 @@ import {
 } from "../../Redux/Reducers/userNotificationReducer";
 import UserNotification from "../UserNotification/UserNotification";
 import DeleteSweepIcon from "@mui/icons-material/DeleteSweep";
-import ShowProduct from "../../pages/Dashboard/showProduct";
+import ShowProduct from "../../pages/Dashboard/ShowProduct";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import {
   CLEAR_MESSAGE_CART,
