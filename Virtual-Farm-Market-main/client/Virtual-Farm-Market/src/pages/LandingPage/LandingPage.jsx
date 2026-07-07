@@ -142,11 +142,9 @@ function LandingPage() {
               <p>
                 Support Office
                 <br />
-                1611 600 greenfield ave
+                Hyderabad, Telangana
                 <br />
-                Kitchener, Ontario
-                <br />
-                N2E 4H5
+                India
               </p>
               <a href="#">Contact Us</a>
               <a href="#">Career Opportunities Email</a>
@@ -161,7 +159,7 @@ function LandingPage() {
             </div>
           </div>
           <div className="copyright-social">
-            <p>© 2023 Virtual Farm Market</p>
+            <p>© 2026 Virtual Farm Market</p>
             <div className="social-icons">
               <a href="#">
                 <i className="fab fa-instagram"></i>
