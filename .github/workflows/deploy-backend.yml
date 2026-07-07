@@ -32,3 +32,14 @@ jobs:
         run: |
           docker build -t $REGISTRY/$REPO:latest ./Virtual-Farm-Market-main/server
           docker push $REGISTRY/$REPO:latest
+
+      - name: Deploy to Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v21
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: vfm-backend-app
+          environment_name: Vfm-backend-app-env
+          version_label: backend-${{ github.sha }}
+          region: ${{ secrets.AWS_REGION }}
+          deployment_package: Dockerrun.aws.json
